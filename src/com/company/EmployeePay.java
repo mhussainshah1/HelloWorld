@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Pay {
+public class EmployeePay {
 
     public static void main(String[] args) {
         long employeeNumber;
@@ -39,4 +39,3 @@ public class Pay {
         System.out.printf("Employee = %s ,weekly pay = %.2f" ,employeeNumber, total);
     }
 }
-
