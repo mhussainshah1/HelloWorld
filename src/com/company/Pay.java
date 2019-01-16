@@ -9,8 +9,10 @@ public class Pay {
         double rate;
         int hours;
         double total = 0.0;
-        System.out.println("Enter employee Number =");
+
         Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("Enter employee Number =");
         employeeNumber = keyboard.nextLong();
         
         System.out.println("Enter Rate = ");
@@ -34,6 +36,7 @@ public class Pay {
             total = rate * hours;
         }
         System.out.println("Employee = " + employeeNumber + " ,weekly pay = " + total);
+        System.out.printf("Employee = %s ,weekly pay = %.2f" ,employeeNumber, total);
     }
 }
 
