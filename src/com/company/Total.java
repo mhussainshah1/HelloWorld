@@ -36,5 +36,9 @@ public class Total {
                 " ,purchase amount = $" + amount +
                 " ,sales tax = " + tax +
                 " and total amount due = " + total);
+
+        String formattedString = String.format("customer’s name = %s ,purchase amount = $ %.2d,"+
+                " sales tax = %.2d and total amount due = %.2d %n", name, amount, tax, total);
+        System.out.printf(formattedString);
     }
 }

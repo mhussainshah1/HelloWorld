@@ -28,7 +28,8 @@ public class Pay {
 
             int overtime  = hours - 35;
             double overtimePay = rate * 1.5 * overtime;
-            total = overtimePay + weeklyPay;
+
+            total = weeklyPay + overtimePay;
         } else {
             total = rate * hours;
         }
